@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>UNIDAD PRODUCTIVA</title>
+    <meta property="og:image" content="">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/jpeg" sizes="1024x861" href="assets/img/depositphotos_35209657-stock-photo-pig-on-white.jpg">
+    <link rel="icon" type="image/jpeg" sizes="1024x861" href="assets/img/depositphotos_35209657-stock-photo-pig-on-white.jpg">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="background: #1c3a31;">
+    <div id="Cabezera-1" style="padding-top: 267px;">
+        <div class="container" style="border-style: solid;border-color: var(--bs-white);">
+            <div class="row">
+                <div class="col text-center"><label class="col-form-label" style="font-size: 20px;color: var(--bs-white);"><strong>FASE PRODUCTIVA</strong><br></label></div>
+            </div>
+            <div class="row text-center">
+                <div class="col">
+                    <form>
+                        <div class="row">
+                            <div class="col"><label class="form-label" style="color: var(--bs-light);">NUMERO DE LOTE:</label><input class="form-control" type="text" id="solicitantePedido-1"></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col">
+                    <form>
+                        <div class="row">
+                            <div class="col"><label class="form-label" style="color: var(--bs-light);">DESTETE (21 DIAS):</label><input class="form-control" type="text" id="solicitantePedido"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center" style="padding-top: 23px;padding-bottom: 84px;"><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-1" href="#collapse-1" role="button" style="width: 90%;background: #095632;border-width: 3px;border-color: var(--bs-dark);font-size: 20px;font-weight: bold;">FASE I (42 DIAS)</a>
+                <div class="collapse" id="collapse-1">
+                    <div class="row text-center" style="padding-right: 6%;padding-left: 6%;">
+                        <div class="col" style="border: 3px solid var(--bs-white) ;">
+                            <form>
+                                <div class="row">
+                                    <div class="col"><label class="form-label" style="font-size: 20px;color: var(--bs-gray-100);">FASE I</label>
+                                        <div class="row">
+                                            <div class="col">
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col"><label class="form-label" style="color: var(--bs-gray-100);">DURACION EN DIAS (21 DIAS):</label><input class="form-control" type="number" id="DestNGest-4"></div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="col">
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col"><label class="form-label" style="color: var(--bs-gray-100);">PESO PROMEDIO (12KG.):</label><input class="form-control" type="number" id="DestPGest-4"></div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="row text-center" style="margin-top: 23px;">
+                                            <div class="col" style="text-align: center;"><button class="btn btn-primary" id="anadirPedido-2" type="button" style="background: var(--bs-green);" onclick="CargarProducto()">ACTUALIZAR</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" style="padding-bottom: 84px;padding-top: 23px;"><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-2" href="#collapse-2" role="button" style="width: 90%;background: #095632;border-width: 3px;border-color: var(--bs-dark);font-size: 20px;font-weight: bold;">FASE II (57 DIAS)</a>
+                <div class="collapse" id="collapse-2">
+                    <div class="row text-center" style="padding-right: 6%;padding-left: 6%;">
+                        <div class="col" style="border: 3px solid var(--bs-white) ;">
+                            <form>
+                                <div class="row">
+                                    <div class="col"><label class="form-label" style="font-size: 20px;color: var(--bs-gray-100);">FASE I</label>
+                                        <div class="row">
+                                            <div class="col">
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col"><label class="form-label" style="color: var(--bs-gray-100);">DURACION EN DIAS (15 DIAS):</label><input class="form-control" type="number" id="DestNGest-2"></div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="col">
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col"><label class="form-label" style="color: var(--bs-gray-100);">PESO PROMEDIO (18 KG.):</label><input class="form-control" type="number" id="DestPGest-2"></div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="row text-center" style="margin-top: 23px;">
+                                            <div class="col" style="text-align: center;"><button class="btn btn-primary" id="anadirPedido-3" type="button" style="background: var(--bs-green);" onclick="CargarProducto()">ACTUALIZAR</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" style="padding-bottom: 84px;padding-top: 23px;"><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-3" href="#collapse-3" role="button" style="width: 90%;background: #095632;border-width: 3px;border-color: var(--bs-dark);font-size: 20px;font-weight: bold;">FASE III O CRECIMIENTO (87 DIAS)</a>
+                <div class="collapse" id="collapse-3">
+                    <div class="row text-center" style="padding-right: 6%;padding-left: 6%;">
+                        <div class="col" style="border: 3px solid var(--bs-white) ;">
+                            <form>
+                                <div class="row">
+                                    <div class="col"><label class="form-label" style="font-size: 20px;color: var(--bs-gray-100);">FASE I</label>
+                                        <div class="row">
+                                            <div class="col">
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col"><label class="form-label" style="color: var(--bs-gray-100);">DURACION EN DIAS (30DIAS):</label><input class="form-control" type="number" id="DestNGest-5"></div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="col">
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col"><label class="form-label" style="color: var(--bs-gray-100);">PESO PROMEDIO (18-30 KG.):</label><input class="form-control" type="number" id="DestPGest-5"></div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="row text-center" style="margin-top: 23px;">
+                                            <div class="col" style="text-align: center;"><button class="btn btn-primary" id="anadirPedido-4" type="button" style="background: var(--bs-green);" onclick="CargarProducto()">ACTUALIZAR</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" style="padding-bottom: 84px;padding-top: 23px;"><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-4" href="#collapse-4" role="button" style="width: 90%;background: #095632;border-width: 3px;border-color: var(--bs-dark);font-size: 20px;font-weight: bold;">FASE IV O DESARROLLO (117 DIAS)</a>
+                <div class="collapse" id="collapse-4">
+                    <div class="row text-center" style="padding-right: 6%;padding-left: 6%;">
+                        <div class="col" style="border: 3px solid var(--bs-white) ;">
+                            <form>
+                                <div class="row">
+                                    <div class="col"><label class="form-label" style="font-size: 20px;color: var(--bs-gray-100);">FASE I</label>
+                                        <div class="row">
+                                            <div class="col">
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col"><label class="form-label" style="color: var(--bs-gray-100);">DURACION EN DIAS (30 DIAS):</label><input class="form-control" type="number" id="DestNGest-6"></div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="col">
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col"><label class="form-label" style="color: var(--bs-gray-100);">PESO PROMEDIO (30-60KG.):</label><input class="form-control" type="number" id="DestPGest-6"></div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="row text-center" style="margin-top: 23px;">
+                                            <div class="col" style="text-align: center;"><button class="btn btn-primary" id="anadirPedido-5" type="button" style="background: var(--bs-green);" onclick="CargarProducto()">ACTUALIZAR</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" style="padding-bottom: 84px;padding-top: 23px;"><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-5" href="#collapse-5" role="button" style="width: 90%;background: #095632;border-width: 3px;border-color: var(--bs-dark);font-size: 20px;font-weight: bold;">FASE V O ENGORDE (177 DIAS)</a>
+                <div class="collapse" id="collapse-5">
+                    <div class="row text-center" style="padding-right: 6%;padding-left: 6%;">
+                        <div class="col" style="border: 3px solid var(--bs-white) ;">
+                            <form>
+                                <div class="row">
+                                    <div class="col"><label class="form-label" style="font-size: 20px;color: var(--bs-gray-100);">FASE I</label>
+                                        <div class="row">
+                                            <div class="col">
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col"><label class="form-label" style="color: var(--bs-gray-100);">DURACION EN DIAS (50-60 DIAS):</label><input class="form-control" type="number" id="DestNGest-7"></div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="col">
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col"><label class="form-label" style="color: var(--bs-gray-100);">PESO PROMEDIO (90-110 KG.):</label><input class="form-control" type="number" id="DestPGest-7"></div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="row text-center" style="margin-top: 23px;">
+                                            <div class="col" style="text-align: center;"><button class="btn btn-primary" id="anadirPedido-6" type="button" style="background: var(--bs-green);" onclick="CargarProducto()">ACTUALIZAR</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center" style="margin-top: 23px;">
+                <div class="col" style="text-align: center;"><button class="btn btn-primary" id="anadirPedido-1" type="button" style="background: var(--bs-green);" onclick="CargarProducto()">ACTUALIZAR</button></div>
+            </div>
+        </div>
+    </div>
+    <div id="titulo">
+        <nav class="navbar navbar-light navbar-expand-md fixed-top" style="padding-top: 138px;margin-top: 50px;">
+            <div class="container"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2" style="background: var(--bs-green);padding-top: 126px;margin-top: -59px;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-2" style="margin-top: -8px;">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="menuDashboard.html" style="background: var(--bs-green);color: var(--bs-white);">DASHBOARD</a></li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="" style="background: var(--bs-green);color: var(--bs-white);">INGRESO</a>
+                            <div class="dropdown-menu" style="background: var(--bs-success);"><a class="dropdown-item" href="menuIngreso.html">NUEVA FICHA DE MADRE</a><a class="dropdown-item" href="menuIngreso1.html">NUEVA GESTACION</a><a class="dropdown-item" href="menuIngreso2-1.html">NUEVA FASE PRODUCTIVA</a></div>
+                        </li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="" style="background: var(--bs-green);color: var(--bs-white);">EGRESO</a>
+                            <div class="dropdown-menu" style="background: var(--bs-success);"><a class="dropdown-item" href="menuEgresoCrear.html">CREAR SOLICITUD</a><a class="dropdown-item" href="menuEgresoVer.html">VER SOLICITUDES</a></div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#" style="background: var(--bs-green);color: var(--bs-white);">ANALISIS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col" style="max-width: 16%;">
+                    <nav class="navbar navbar-light navbar-expand-md fixed-top" style="background: var(--bs-green);">
+                        <div class="container-fluid">
+                            <div class="container" style="padding-right: 120px;">
+                                <div class="row">
+                                    <div class="col"><a class="navbar-brand" id="UnidadProductivaMenu-2" href="#"><strong><span style="color: rgba(255, 255, 255, 0.9);">SUB UNIDAD PRODUCTIVA</span></strong></a></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col"><a class="navbar-brand" id="UnidadProductivaTitulo-2" href="#" style="font-size: 30px;"><strong><span style="color: rgba(255, 255, 255, 0.9);">CERDOS</span></strong><br></a></div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col offset-3">
+                                        <ul class="navbar-nav flex-nowrap ms-auto">
+                                            <li class="nav-item dropdown no-arrow">
+                                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small">USUARIO</span><img class="border rounded-circle img-profile" src="assets/img/depositphotos_35209657-stock-photo-pig-on-white.jpg" width="100"></a>
+                                                    <div class="dropdown-menu dropdown-menu-dark shadow dropdown-menu-end animated--grow-in" style="background: var(--bs-success);"><a class="dropdown-item" href="#"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;PERFIL</a><a class="dropdown-item" href="#"><i class="fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;AJUSTES</a><a class="dropdown-item" href="#"><i class="fas fa-list fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;ACTIVIDADES</a>
+                                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;CERRAR SESION</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col text-center"><label class="col-form-label" id="fechaIngreso" style="font-size: 22px;">dd/mm/aa</label></div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/cargador.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/ingreso.js"></script>
+    <script src="assets/js/prueba.js"></script>
+</body>
+
+</html>
