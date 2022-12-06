@@ -19,192 +19,194 @@
     <div class="text-center" id="colapsos" style="padding-top: 305px;">
         <div style="padding-bottom: 30px;"><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-1" href="#collapse-1" role="button" style="width: 90%;background: var(--bs-green);border-width: 3px;border-color: var(--bs-dark);font-size: 20px;font-weight: bold;">SOLICITUD</a>
             <div class="collapse" id="collapse-1">
-                <div id="Cabezera">
-                    <div class="container" style="border-style: solid;border-color: var(--bs-white);">
-                        <div class="row">
-                            <div class="col text-center"><label class="col-form-label" style="font-size: 19px;color: var(--bs-light);"><strong>SOLICITUD DEL PEDIDO</strong><br></label></div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <form>
-                                    <div class="row">
-                                        <div class="col"><label class="form-label" style="color: var(--bs-light);">FECHA:</label><input class="form-control" id="fechaPedido" type="date"></div>
-                                    </div>
-                                </form>
+                <div class="container" style="background: #10482e;border-style: solid;">
+                    <div id="Cabezera">
+                        <div class="container" style="border-style: solid;border-color: var(--bs-white);">
+                            <div class="row">
+                                <div class="col text-center"><label class="col-form-label" style="font-size: 19px;color: var(--bs-light);"><strong>SOLICITUD DEL PEDIDO</strong><br></label></div>
                             </div>
-                            <div class="col">
-                                <form>
-                                    <div class="row">
-                                        <div class="col"><label class="form-label" style="color: var(--bs-light);">SOLICITANTE:</label><input class="form-control" type="text" id="solicitantePedido"></div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="row" style="margin-top: 27px;">
-                            <div class="col">
-                                <form>
-                                    <div class="row">
-                                        <div class="col"><label class="form-label" style="color: var(--bs-light);">CODIGO:</label><input class="form-control" type="text" id="codigoPedido"></div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="col">
-                                <form>
-                                    <div class="row">
-                                        <div class="col"><label class="form-label" style="color: var(--bs-light);">VERIFICADO POR:</label><input class="form-control" type="text" id="verificadoPedido"></div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="row" style="margin-top: 27px;">
-                            <div class="col">
-                                <form>
-                                    <div class="row">
-                                        <div class="col"><label class="form-label" style="color: var(--bs-light);">DESCRIPCION:</label><textarea class="form-control" id="descripcionPedido"></textarea></div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="col">
-                                <form>
-                                    <div class="row">
-                                        <div class="col"><label class="form-label" style="color: var(--bs-light);">APROBADO POR:</label><input class="form-control" type="text" id="aprobadoPedido"></div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="row" style="margin-top: 27px;">
-                            <div class="col">
-                                <form>
-                                    <div class="row">
-                                        <div class="col"><label class="col-form-label" style="color: var(--bs-light);">PARA:</label></div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="informacionElegido"><label class="form-check-label" for="informacionElegido-1" style="color: var(--bs-light);">SU INFORMACION</label></div>
-                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="accionElegido"><label class="form-check-label" for="accionElegido-1" style="color: var(--bs-light);">ACCION INMEDIATA</label></div>
+                            <div class="row">
+                                <div class="col">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col"><label class="form-label" style="color: var(--bs-light);">FECHA:</label><input class="form-control" id="fechaPedido" type="date"></div>
                                         </div>
-                                        <div class="col">
-                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="discusionElegido"><label class="form-check-label" for="discusionElegido-1" style="color: var(--bs-light);">DISCUSION</label></div>
-                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="aprobacionElegido"><label class="form-check-label" for="aprobacionElegido-1" style="color: var(--bs-light);">APROBACION</label></div>
+                                    </form>
+                                </div>
+                                <div class="col">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col"><label class="form-label" style="color: var(--bs-light);">SOLICITANTE:</label><input class="form-control" type="text" id="solicitantePedido"></div>
                                         </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col text-center" style="margin-top: 37px;border-top-style: solid;"><label class="col-form-label" style="font-size: 20px;color: var(--bs-light);"><strong>DETALLES DEL PEDIDO</strong></label></div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <form>
-                                    <div class="row">
-                                        <div class="col"><label class="form-label" style="color: var(--bs-light);">CATEGORIA:</label><select class="form-select" id="categoriaPedido" onclick="cargarCategoria(this)">
-                                                <option value="1">ALIMENTACION</option>
-                                                <option value="2">MEDICAMENTOS</option>
-                                                <option value="3">MANTENIMIENTO</option>
-                                                <option value="4">REPRODUCTORES</option>
-                                                <option value="5">TRANSPORTE</option>
-                                            </select></div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="col">
-                                <form>
-                                    <div class="row">
-                                        <div class="col"><label class="form-label" style="color: var(--bs-light);">PRODUCTO:</label><select class="form-select" id="categoriaDetalles">
-                                                <option value="1">MAIZ</option>
-                                                <option value="1">SORGO</option>
-                                                <option value="1">SOYA</option>
-                                                <option value="1">SAL</option>
-                                                <option value="1">NUCLEO</option>
-                                                <option value="2">ANTIBIOTICOS</option>
-                                                <option value="2">DESPARASITANTES</option>
-                                                <option value="2">VITAMINAS</option>
-                                                <option value="2">MINERALES</option>
-                                                <option value="2">HORMONAS</option>
-                                                <option value="2">DESINFECTANTES</option>
-                                                <option value="2">AGUA OXIGENADA</option>
-                                                <option value="2">CICATRIZANTES</option>
-                                                <option value="3">INFRAESTRUCTURAS</option>
-                                                <option value="4">VERRACO</option>
-                                                <option value="4">VIENTRE</option>
-                                            </select></div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="col">
-                                <form>
-                                    <div class="row">
-                                        <div class="col"><label class="form-label" style="color: var(--bs-light);">UNIDAD:</label><select class="form-select" id="unidadDetalles">
-                                                <option value="Kg.">Kg.</option>
-                                                <option value="QQ.">QQ.</option>
-                                                <option value="Tn.">Tn.</option>
-                                                <option value="Gramos">Gramos</option>
-                                            </select></div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="col">
-                                <form>
-                                    <div class="row">
-                                        <div class="col"><label class="form-label" style="color: var(--bs-light);">CANTIDAD:</label><input class="form-control" type="number" id="cantidadDetalles" onkeypress="return event.charCode &gt;=48" min="0" value="0"></div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="col">
-                                <form>
-                                    <div class="row">
-                                        <div class="col"><label class="form-label" style="color: var(--bs-light);">PRECIO UNITARIO:</label><input class="form-control" type="number" id="precioUnitario" onkeypress="return event.charCode &gt;=48" min="0" value="0"></div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <form>
-                                    <div class="row">
-                                        <div class="col"><label class="form-label" style="color: var(--bs-light);">DESCRIPCION:</label><textarea class="form-control" id="descripcionDetalles"></textarea></div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="row" style="margin-top: 23px;">
-                            <div class="col" style="text-align: center;"><button class="btn btn-primary" id="anadirPedido" type="button" style="background: var(--bs-green);" onclick="CargarProducto()">AÑADIR</button></div>
-                        </div>
-                    </div>
-                </div>
-                <div id="Tabla">
-                    <div class="container" style="border-style: solid;border-color: var(--bs-white);background: var(--bs-green);">
-                        <div class="row">
-                            <div class="col">
-                                <div class="table-responsive">
-                                    <table class="table" id="tablaSolicitud">
-                                        <thead class="text-center">
-                                            <tr>
-                                                <th style="width: 6%;color: var(--bs-light);border-width: 3px;border-color: var(--bs-white);">ITEM</th>
-                                                <th style="color: var(--bs-light);border-width: 3px;border-color: var(--bs-white);">CATEGORIA</th>
-                                                <th style="color: var(--bs-light);border-width: 3px;border-color: var(--bs-white);">PRODUCTO</th>
-                                                <th style="color: var(--bs-light);border-width: 3px;border-color: var(--bs-white);">DESCRIPCION</th>
-                                                <th style="width: 10%;color: var(--bs-light);border-width: 3px;border-color: var(--bs-white);">UNIDAD</th>
-                                                <th style="width: 10%;color: var(--bs-light);border-width: 3px;border-color: var(--bs-white);">CANTIDAD</th>
-                                                <th style="width: 10%;color: var(--bs-light);border-width: 3px;border-color: var(--bs-white);">PRECIO UNITARIO</th>
-                                                <th style="width: 10%;color: var(--bs-light);border-width: 3px;border-color: var(--bs-white);">SUBTOTAL (Bs.-)</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody></tbody>
-                                    </table>
+                                    </form>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col" style="text-align: right;">
-                                <div></div>
+                            <div class="row" style="margin-top: 27px;">
+                                <div class="col">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col"><label class="form-label" style="color: var(--bs-light);">CODIGO:</label><input class="form-control" type="text" id="codigoPedido"></div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col"><label class="form-label" style="color: var(--bs-light);">VERIFICADO POR:</label><input class="form-control" type="text" id="verificadoPedido"></div>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
-                            <div class="col" style="text-align: right;"><label class="col-form-label" style="color: var(--bs-light);">TOTAL (BS.-)=</label></div>
-                            <div class="col" style="text-align: right;max-width: 30%;"><label class="col-form-label" id="resultadoEgreso" style="color: var(--bs-light);">0.00 Bs.-</label></div>
+                            <div class="row" style="margin-top: 27px;">
+                                <div class="col">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col"><label class="form-label" style="color: var(--bs-light);">DESCRIPCION:</label><textarea class="form-control" id="descripcionPedido"></textarea></div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col"><label class="form-label" style="color: var(--bs-light);">APROBADO POR:</label><input class="form-control" type="text" id="aprobadoPedido"></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 27px;">
+                                <div class="col">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col"><label class="col-form-label" style="color: var(--bs-light);">PARA:</label></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="informacionElegido"><label class="form-check-label" for="informacionElegido-1" style="color: var(--bs-light);">SU INFORMACION</label></div>
+                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="accionElegido"><label class="form-check-label" for="accionElegido-1" style="color: var(--bs-light);">ACCION INMEDIATA</label></div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="discusionElegido"><label class="form-check-label" for="discusionElegido-1" style="color: var(--bs-light);">DISCUSION</label></div>
+                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="aprobacionElegido"><label class="form-check-label" for="aprobacionElegido-1" style="color: var(--bs-light);">APROBACION</label></div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col text-center" style="margin-top: 37px;border-top-style: solid;"><label class="col-form-label" style="font-size: 20px;color: var(--bs-light);"><strong>DETALLES DEL PEDIDO</strong></label></div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col"><label class="form-label" style="color: var(--bs-light);">CATEGORIA:</label><select class="form-select" id="categoriaPedido" onclick="cargarCategoria(this)">
+                                                    <option value="1">ALIMENTACION</option>
+                                                    <option value="2">MEDICAMENTOS</option>
+                                                    <option value="3">MANTENIMIENTO</option>
+                                                    <option value="4">REPRODUCTORES</option>
+                                                    <option value="5">TRANSPORTE</option>
+                                                </select></div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col"><label class="form-label" style="color: var(--bs-light);">PRODUCTO:</label><select class="form-select" id="categoriaDetalles">
+                                                    <option value="1">MAIZ</option>
+                                                    <option value="1">SORGO</option>
+                                                    <option value="1">SOYA</option>
+                                                    <option value="1">SAL</option>
+                                                    <option value="1">NUCLEO</option>
+                                                    <option value="2">ANTIBIOTICOS</option>
+                                                    <option value="2">DESPARASITANTES</option>
+                                                    <option value="2">VITAMINAS</option>
+                                                    <option value="2">MINERALES</option>
+                                                    <option value="2">HORMONAS</option>
+                                                    <option value="2">DESINFECTANTES</option>
+                                                    <option value="2">AGUA OXIGENADA</option>
+                                                    <option value="2">CICATRIZANTES</option>
+                                                    <option value="3">INFRAESTRUCTURAS</option>
+                                                    <option value="4">VERRACO</option>
+                                                    <option value="4">VIENTRE</option>
+                                                </select></div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col"><label class="form-label" style="color: var(--bs-light);">UNIDAD:</label><select class="form-select" id="unidadDetalles">
+                                                    <option value="Kg.">Kg.</option>
+                                                    <option value="QQ.">QQ.</option>
+                                                    <option value="Tn.">Tn.</option>
+                                                    <option value="Gramos">Gramos</option>
+                                                </select></div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col"><label class="form-label" style="color: var(--bs-light);">CANTIDAD:</label><input class="form-control" type="number" id="cantidadDetalles" onkeypress="return event.charCode &gt;=48" min="0" value="0"></div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col"><label class="form-label" style="color: var(--bs-light);">PRECIO UNITARIO:</label><input class="form-control" type="number" id="precioUnitario" onkeypress="return event.charCode &gt;=48" min="0" value="0"></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col"><label class="form-label" style="color: var(--bs-light);">DESCRIPCION:</label><textarea class="form-control" id="descripcionDetalles"></textarea></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 23px;">
+                                <div class="col" style="text-align: center;"><button class="btn btn-primary" id="anadirPedido" type="button" style="background: var(--bs-green);" onclick="CargarProducto()">AÑADIR</button></div>
+                            </div>
                         </div>
-                        <div class="row">
-                            <div class="col" style="text-align: center;"><button class="btn btn-primary" id="mandarSolicitud" type="button" style="background: var(--bs-green);" onclick="cargar()">SOLICITAR PEDIDO</button></div>
+                    </div>
+                    <div id="Tabla">
+                        <div class="container" style="border-style: solid;border-color: var(--bs-white);background: var(--bs-green);">
+                            <div class="row" style="background: #10482e;">
+                                <div class="col">
+                                    <div class="table-responsive">
+                                        <table class="table" id="tablaSolicitud">
+                                            <thead class="text-center">
+                                                <tr>
+                                                    <th style="width: 6%;color: var(--bs-light);border-width: 3px;border-color: var(--bs-white);">ITEM</th>
+                                                    <th style="color: var(--bs-light);border-width: 3px;border-color: var(--bs-white);">CATEGORIA</th>
+                                                    <th style="color: var(--bs-light);border-width: 3px;border-color: var(--bs-white);">PRODUCTO</th>
+                                                    <th style="color: var(--bs-light);border-width: 3px;border-color: var(--bs-white);">DESCRIPCION</th>
+                                                    <th style="width: 10%;color: var(--bs-light);border-width: 3px;border-color: var(--bs-white);">UNIDAD</th>
+                                                    <th style="width: 10%;color: var(--bs-light);border-width: 3px;border-color: var(--bs-white);">CANTIDAD</th>
+                                                    <th style="width: 10%;color: var(--bs-light);border-width: 3px;border-color: var(--bs-white);">PRECIO UNITARIO</th>
+                                                    <th style="width: 10%;color: var(--bs-light);border-width: 3px;border-color: var(--bs-white);">SUBTOTAL (Bs.-)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody></tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="background: #10482e;">
+                                <div class="col" style="text-align: right;">
+                                    <div></div>
+                                </div>
+                                <div class="col" style="text-align: right;"><label class="col-form-label" style="color: var(--bs-light);">TOTAL (BS.-)=</label></div>
+                                <div class="col" style="text-align: right;max-width: 30%;"><label class="col-form-label" id="resultadoEgreso" style="color: var(--bs-light);">0.00 Bs.-</label></div>
+                            </div>
+                            <div class="row" style="background: #10482e;">
+                                <div class="col" style="text-align: center;width: 1283px;margin-bottom: 28px;"><button class="btn btn-primary" id="mandarSolicitud" type="button" style="background: var(--bs-green);" onclick="cargar()">SOLICITAR PEDIDO</button></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -213,7 +215,7 @@
         <div style="padding-bottom: 30px;"><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-2" href="#collapse-2" role="button" style="width: 90%;background: var(--bs-green);border-width: 3px;border-color: var(--bs-dark);font-size: 20px;font-weight: bold;">APROBACION</a>
             <div class="collapse" id="collapse-2">
                 <div id="Cabezera-1">
-                    <div class="container" style="border-style: solid;">
+                    <div class="container" style="border-style: solid;background: #10482e;">
                         <div class="row">
                             <div class="col text-center"><label class="col-form-label" style="font-size: 20px;color: var(--bs-white);"><strong>APROBACION</strong><br></label></div>
                         </div>
@@ -245,7 +247,7 @@
                             </div>
                         </div>
                         <div class="row" style="margin-top: 23px;">
-                            <div class="col" style="text-align: center;"><button class="btn btn-primary" id="anadirPedido-1" type="button" style="background: var(--bs-green);" onclick="CargarProducto()">ACTUALIZAR</button></div>
+                            <div class="col" style="text-align: center;margin-bottom: 28px;"><button class="btn btn-primary" id="anadirPedido-1" type="button" style="background: var(--bs-green);" onclick="CargarProducto()">ACTUALIZAR</button></div>
                         </div>
                     </div>
                 </div>
@@ -254,7 +256,7 @@
         <div style="padding-bottom: 30px;"><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-3" href="#collapse-3" role="button" style="width: 90%;background: var(--bs-green);border-width: 3px;border-color: var(--bs-dark);font-size: 20px;font-weight: bold;">DESEMBOLSO</a>
             <div class="collapse" id="collapse-3">
                 <div id="Cabezera-2">
-                    <div class="container" style="border-style: solid;">
+                    <div class="container" style="border-style: solid;background: #10482e;">
                         <div class="row">
                             <div class="col text-center"><label class="col-form-label" style="font-size: 20px;color: var(--bs-white);"><strong>DESEMBOLSO</strong><br></label></div>
                         </div>
@@ -275,7 +277,7 @@
                             </div>
                         </div>
                         <div class="row" style="margin-top: 23px;">
-                            <div class="col" style="text-align: center;"><button class="btn btn-primary" id="anadirPedido-2" type="button" style="background: var(--bs-green);" onclick="CargarProducto()">ACTUALIZAR</button></div>
+                            <div class="col" style="text-align: center;margin-bottom: 28px;"><button class="btn btn-primary" id="anadirPedido-2" type="button" style="background: var(--bs-green);" onclick="CargarProducto()">ACTUALIZAR</button></div>
                         </div>
                     </div>
                 </div>
@@ -284,7 +286,7 @@
         <div style="padding-bottom: 30px;"><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-4" href="#collapse-4" role="button" style="width: 90%;background: var(--bs-green);border-width: 3px;border-color: var(--bs-dark);font-size: 20px;font-weight: bold;">COMPRA</a>
             <div class="collapse" id="collapse-4">
                 <div id="Cabezera-3">
-                    <div class="container" style="border-style: solid;">
+                    <div class="container" style="border-style: solid;background: #10482e;">
                         <div class="row">
                             <div class="col text-center"><label class="col-form-label" style="font-size: 20px;color: var(--bs-white);"><strong>COMPRA</strong><br></label></div>
                         </div>
@@ -313,44 +315,42 @@
         </div>
         <div style="padding-bottom: 21px;"><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-5" href="#collapse-5" role="button" style="width: 90%;background: var(--bs-green);border-width: 3px;border-color: var(--bs-dark);font-size: 20px;font-weight: bold;">RENDICION</a>
             <div class="collapse" id="collapse-5">
-                <div id="Cabezera-4">
-                    <div class="container" style="border-style: solid;">
-                        <div class="row">
-                            <div class="col text-center"><label class="col-form-label" style="font-size: 20px;color: var(--bs-white);"><strong>RENDICION</strong><br></label></div>
+                <div class="container" style="border-style: solid;background: #10482e;">
+                    <div class="row">
+                        <div class="col text-center"><label class="col-form-label" style="font-size: 20px;color: var(--bs-white);"><strong>RENDICION</strong><br></label></div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <form>
+                                <div class="row">
+                                    <div class="col"><label class="form-label" style="color: var(--bs-white);">FECHA DE RENDICION:</label><input class="form-control" id="fechaPedido-5" type="date"></div>
+                                </div>
+                            </form>
                         </div>
-                        <div class="row">
-                            <div class="col">
-                                <form>
-                                    <div class="row">
-                                        <div class="col"><label class="form-label" style="color: var(--bs-white);">FECHA DE RENDICION:</label><input class="form-control" id="fechaPedido-5" type="date"></div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="col">
-                                <form>
-                                    <div class="row">
-                                        <div class="col"><label class="form-label" style="color: var(--bs-white);">QUIEN HACE LA RENDICION:</label><select class="form-select">
-                                                <option value="3" selected="">DECANO</option>
-                                                <option value="13">COORD. DE FACULTAD</option>
-                                            </select></div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="col">
-                                <form>
-                                    <div class="row">
-                                        <div class="col"><label class="form-label" style="color: var(--bs-white);">DERIVADO A:</label><select class="form-select">
-                                                <option value="12" selected="">VICERRECTORADO</option>
-                                                <option value="13">SECRETARIA GRAL.</option>
-                                                <option value="14">CONTABILIDAD</option>
-                                            </select></div>
-                                    </div>
-                                </form>
-                            </div>
+                        <div class="col">
+                            <form>
+                                <div class="row">
+                                    <div class="col"><label class="form-label" style="color: var(--bs-white);">QUIEN HACE LA RENDICION:</label><select class="form-select">
+                                            <option value="3" selected="">DECANO</option>
+                                            <option value="13">COORD. DE FACULTAD</option>
+                                        </select></div>
+                                </div>
+                            </form>
                         </div>
-                        <div class="row" style="margin-top: 23px;">
-                            <div class="col" style="text-align: center;"><button class="btn btn-primary" id="anadirPedido-4" type="button" style="background: var(--bs-green);" onclick="CargarProducto()">ACTUALIZAR</button></div>
+                        <div class="col">
+                            <form>
+                                <div class="row">
+                                    <div class="col"><label class="form-label" style="color: var(--bs-white);">DERIVADO A:</label><select class="form-select">
+                                            <option value="12" selected="">VICERRECTORADO</option>
+                                            <option value="13">SECRETARIA GRAL.</option>
+                                            <option value="14">CONTABILIDAD</option>
+                                        </select></div>
+                                </div>
+                            </form>
                         </div>
+                    </div>
+                    <div class="row" style="margin-top: 23px;">
+                        <div class="col" style="text-align: center;margin-bottom: 28px;"><button class="btn btn-primary" id="anadirPedido-4" type="button" style="background: var(--bs-green);" onclick="CargarProducto()">ACTUALIZAR</button></div>
                     </div>
                 </div>
             </div>
